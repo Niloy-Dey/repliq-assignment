@@ -9,6 +9,7 @@ import shopping from '../../../assets/images/truck.png'
 import 'react-modern-drawer/dist/index.css'
 
 
+
 const Navbar = () => {
     const [isOpen, setIsOpen] = React.useState(false)
     const toggleDrawer = () => {
@@ -21,21 +22,21 @@ const Navbar = () => {
 
     return (
         <>
-            <div className=' flex mt-10 '>
+            <div className=' flex  w-full'>
                 <button onClick={toggleDrawer}>
                     <img className='h-10 w-10' src={menu} alt="" />
                 </button>
-                <div className='grid grid-cols-4 '>
-                    <button className=' flex justify-center items-center bg-blue-100   mr-4 ml-4   text-blue-600 '>
-                        <img src={note} className='w-5 mr-3' alt="" />Home
+                <div className='grid grid-cols-4 w-full gap-3 '>
+                    <button className=' flex justify-between p-1 items-center   ml-2 bg-[#EEF0F9]   text-[#5C6AC4] '>
+                        <img src={note} className='w-5 ' alt="" /> Home
                     </button>
-                    <button className='flex justify-center items-center bg-blue-100   mr-4 p-3 text-blue-600 '>
-                        <img src={shopping} className='w-5 mr-3' alt="" />about
+                    <button className='flex justify-between items-center  p-1 bg-[#EEF0F9]   text-[#5C6AC4] '>
+                        <img src={shopping} className='w-5 ' alt="" />about
                     </button>
-                    <button className='flex justify-center items-center bg-blue-100   mr-4 p-3 text-blue-600 '>
+                    <button className='flex justify-center items-center    p-3 bg-[#EEF0F9]   text-[#5C6AC4]'>
                         <img src={shopping} className='w-5 mr-3' alt="" />Hold orders
                     </button>
-                    <button className='flex justify-center items-center bg-blue-100  p-3 text-blue-600 '>
+                    <button className='flex justify-center items-center  p-3 bg-[#EEF0F9]   text-[#5C6AC4] '>
                         <img src={shopping} className='w-5 mr-3' alt="" />New Items
                     </button>
                 </div>

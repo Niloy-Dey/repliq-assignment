@@ -1,0 +1,63 @@
+{
+    "electronics": [
+      {
+        "image": "https://example.com/electronics/product1.jpg",
+        "name": "Smartphone",
+        "price": 499.99,
+        "description": "A powerful smartphone with advanced features."
+      },
+      {
+        "image": "https://example.com/electronics/product2.jpg",
+        "name": "Laptop",
+        "price": 999.99,
+        "description": "A high-performance laptop for work and entertainment."
+      },
+      {
+        "image": "https://example.com/electronics/product3.jpg",
+        "name": "Headphones",
+        "price": 149.99,
+        "description": "High-quality headphones for immersive audio experience."
+      }
+    ],
+    "mens_fashion": [
+      {
+        "image": "https://example.com/mens_fashion/product1.jpg",
+        "name": "T-Shirt",
+        "price": 29.99,
+        "description": "Comfortable and stylish t-shirt for everyday wear."
+      },
+      {
+        "image": "https://example.com/mens_fashion/product2.jpg",
+        "name": "Jeans",
+        "price": 59.99,
+        "description": "Classic jeans made from premium denim fabric."
+      },
+      {
+        "image": "https://example.com/mens_fashion/product3.jpg",
+        "name": "Sneakers",
+        "price": 79.99,
+        "description": "Trendy sneakers with cushioned soles for maximum comfort."
+      }
+    ],
+    "womens_fashion": [
+      {
+        "image": "https://example.com/womens_fashion/product1.jpg",
+        "name": "Dress",
+        "price": 79.99,
+        "description": "Elegant dress for special occasions."
+      },
+      {
+        "image": "https://example.com/womens_fashion/product2.jpg",
+        "name": "Handbag",
+        "price": 49.99,
+        "description": "Stylish handbag with multiple compartments."
+      },
+      {
+        "image": "https://example.com/womens_fashion/product3.jpg",
+        "name": "Sandals",
+        "price": 39.99,
+        "description": "Comfortable sandals perfect for summer outings."
+      }
+    ]
+  }
+  

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Searchbar = () => {
+const Products = () => {
     return (
         <div>
             
@@ -8,4 +8,4 @@ const Searchbar = () => {
     );
 };
 
-export default Searchbar;
+export default Products;
