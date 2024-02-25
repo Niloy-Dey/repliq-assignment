@@ -92,6 +92,7 @@ const CartData = () => {
                             <td className=" py-2  ">
                                 <button><img className='w-4' src={note} alt="" />  </button>
                             </td>
+
                             <td className="px-4 py-2 border-l-2 border-t-2 border-b-2  ">{product.name}</td>
                             <td className="px-4 py-2 border-t-2 border-b-2  "> $ {product.price}</td>
                             <td className="px-4 py-2 border-t-2 border-b-2  ">
@@ -101,7 +102,7 @@ const CartData = () => {
                             </td>
                             <td className="  py-2  border-t-2 border-b-2 border-r-2 "> $ {product.price * product.quantity}</td>
                             <td className="  py-2 text-right ">
-                                <button onClick={() => deleteProduct(product.id)}> <img className=' w-6' src={deleteButton} alt="" /> </button>
+                                <button onClick={() => deleteProduct(product.id)}> <img className=' w-5 md:w-6 lg:w-6 ' src={deleteButton} alt="" /> </button>
                             </td>
                         </tr>
                     ))}
@@ -140,7 +141,7 @@ const CartData = () => {
 
 
             {/* showing the total price and total products start here */}
-            <div className=' flex text-blue-500 justify-between items-center bg-blue-100  my-2 px-3 py-1'>
+            <div className='rounded flex text-blue-500 justify-between items-center bg-blue-100  my-2 px-3 py-1'>
                 <p>Products Count  ({getProductCount()})  </p>
                 <table className="">
                     <tbody>
