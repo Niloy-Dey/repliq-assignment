@@ -34,19 +34,19 @@ const Navbar = () => {
         <>
             <div className=' flex  w-full'>
                 <button onClick={toggleDrawer}>
-                    <img className='h-7 w-10' src={menu} alt="" />
+                    <img className='lg:h-7 w-4 lg:w-10' src={menu} alt="" />
                 </button>
-                <div className='grid grid-cols-4 w-full gap-3 '>
-                    <button className='rounded text-sm md:text-base lg:text-xl flex justify-evenly items-center ml-2 p-3 bg-[#EEF0F9]   text-[#5C6AC4]'>
+                <div className='grid grid-cols-4 w-full gap-1 md:gap-2 lg:gap-3 '>
+                    <button className='rounded text-xs md:text-base lg:text-xl flex justify-evenly items-center ml-2 p-1 lg:p-3 bg-[#EEF0F9]   text-[#5C6AC4]'>
                         <img src={note} className='w-3 md:w-4 lg:w-6' alt="" /> Home
                     </button>
-                    <button className='rounded text-sm md:text-base lg:text-xl flex justify-evenly  items-center    p-3 bg-[#EEF0F9]   text-[#5C6AC4]' >
+                    <button className='rounded text-xs md:text-base lg:text-xl flex justify-evenly  items-center   p-1 lg:p-3 bg-[#EEF0F9]   text-[#5C6AC4]' >
                         <img src={shopping} className='w-3 md:w-4 lg:w-6' alt="" />about
                     </button>
-                    <button className='rounded text-sm md:text-base lg:text-xl flex justify-evenly items-center    p-3 bg-[#EEF0F9]   text-[#5C6AC4]'>
+                    <button className='rounded text-xs md:text-base lg:text-xl flex justify-evenly items-center    p-1 lg:p-3  bg-[#EEF0F9]   text-[#5C6AC4]'>
                         <img src={hold} className='w-3 md:w-4 lg:w-6' alt="" />Hold orders
                     </button>
-                    <button className='rounded text-sm md:text-base lg:text-xl flex justify-evenly items-center    p-3 bg-[#EEF0F9]   text-[#5C6AC4]' >
+                    <button className='rounded text-xs md:text-base lg:text-xl flex justify-evenly items-center    p-1 lg:p-3  bg-[#EEF0F9]   text-[#5C6AC4]' >
                         <img src={newAdd} className='w-3 md:w-4 lg:w-6' alt="" />New Items
                     </button>
                 </div>
@@ -97,7 +97,7 @@ const Navbar = () => {
             {isModalOpen && (
                 <div className="fixed inset-0 flex items-center justify-center z-50">
                     <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
-                    <div className="bg-white p-6 w-96 rounded-lg z-10">
+                    <div className="bg-white p-6 w-72 md:w-80 lg:w-96 rounded-lg z-10">
                         <div className="flex  items-center mb-6">
                             <button onClick={closeModal}> <img className='w-7' src={arrow} alt="" /> </button>
                             <h2 className="text-lg  lg:text-xl mx-auto font-bold">Settings</h2>

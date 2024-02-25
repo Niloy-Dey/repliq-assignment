@@ -19,7 +19,7 @@ const Dashboard = () => {
 
     return (
         <div>
-            <div className='container mt-2 px-2 mx-auto flex '>
+            <div className='container mt-2 px-2 mx-auto flex flex-col md:flex-row lg:flex-row'>
                 <CartFunctionality handlePayNowClick={handlePayNowClick}></CartFunctionality>
 
                 {showPayingSection

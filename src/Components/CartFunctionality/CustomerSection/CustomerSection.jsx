@@ -39,7 +39,7 @@ const CustomerSection = () => {
             {isModalOpen && (
                 <div className="fixed inset-0 flex items-center justify-center z-50">
                     <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
-                    <div className="bg-white p-6 w-96 rounded-lg z-10">
+                    <div className="bg-white p-6 w-72 md:w-80 lg:w-96 rounded-lg z-10">
                         <div className="flex  items-center mb-6">
                             <button onClick={closeModal}> <img className='w-7' src={arrow} alt="" /> </button>
                             <h2 className="text-lg  lg:text-xl mx-auto font-bold">Add Customer Details</h2>

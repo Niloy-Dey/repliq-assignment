@@ -7,7 +7,7 @@ const CartFunctionality = ({handlePayNowClick}) => {
 
     
     return (
-        <div className=' w-2/4	border-r-2  pr-5'>
+        <div className='w-full md:w-2/4 lg:w-2/4	border-r-2  pr-5'>
             <Navbar></Navbar>
 
             <CustomerSection></CustomerSection>

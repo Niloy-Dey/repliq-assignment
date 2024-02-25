@@ -5,7 +5,7 @@ import Products from './Products/Products';
 
 const DataDisplay = () => {
     return (
-        <div className=' w-2/4	'>
+        <div className=' w-full md:w-2/4 lg:w-2/4	'>
             <Searchbar></Searchbar>
 
             <CategoryBar></CategoryBar>

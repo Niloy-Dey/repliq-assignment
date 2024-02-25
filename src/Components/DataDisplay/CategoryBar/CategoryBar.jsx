@@ -18,12 +18,12 @@ const CategoryBar = () => {
     };
 
     return (
-        <div className='grid grid-cols-5 gap-2 mt-2 mx-3 px-2'>
+        <div className='grid grid-cols-2 lg:grid-cols-5 gap-2 mt-2 mx-3 px-2'>
             <button className={`border-2 text-sm  rounded-md py-2 font-bold ${activeCategory === "All" ? 'text-blue-500  border-blue-500' : 'text-gray-500'}`} onClick={() => handleCategoryClick("All")}>All Categories</button>
             <button className={`border-2 text-sm  rounded-md py-2 font-bold ${activeCategory === "Electronics" ? 'text-blue-500 border-blue-500' : 'text-gray-500'}`} onClick={() => handleCategoryClick("Electronics")}>Electronics</button>
             <button className={`border-2 text-sm   rounded-md py-2 font-bold ${activeCategory === "Home & Lifestyle" ? 'text-blue-500  border-blue-500' : 'text-gray-500'}`} onClick={() => handleCategoryClick("Home & Lifestyle")}>Home & Lifestyle</button>
             <button className={`border-2 text-sm  rounded-md py-2 font-bold ${activeCategory === "Men Fashion" ? 'text-blue-500  border-blue-500' : 'text-gray-500'}`} onClick={() => handleCategoryClick("Men Fashion")}>Men Fashion</button>
-            <div className='flex  items-center '><button className={` text-sm border-2 rounded-md  font-bold ${activeCategory === "Women Fashion" ? 'text-blue-500  border-blue-500' : 'text-gray-500'}`} onClick={() => handleCategoryClick("Women Fashion")}>Women Fashion</button><img className='lg:h-8' src={dot} alt="" /></div>
+            <div className='hidden lg:block'><div className='flex  items-center  '><button className={` text-sm border-2 rounded-md  font-bold ${activeCategory === "Women Fashion" ? 'text-blue-500  border-blue-500' : 'text-gray-500'}`} onClick={() => handleCategoryClick("Women Fashion")}>Women Fashion</button><img className='lg:h-8 ' src={dot} alt="" /></div></div>
             <button className='' onClick={() => handleCategoryClick("")}> </button>
             {isDrawerOpen && (
                 <div className="fixed inset-y-0 right-0 z-50 bg-white w-96 shadow-lg">
