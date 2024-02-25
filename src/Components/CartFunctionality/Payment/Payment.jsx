@@ -8,8 +8,7 @@ const Payment = ({handleCancelPage}) => {
 
     const handleCancel = () => {
         handleCancelPage()
-        // Handle cancel button click
-        // You can add your logic here, such as closing the payment page
+        
     };
 
     return (

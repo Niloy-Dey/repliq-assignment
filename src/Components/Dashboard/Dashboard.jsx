@@ -12,7 +12,7 @@ const Dashboard = () => {
         setShowPayingSection(true);
     };
 
-    const handleCancelPage= () =>{
+    const handleCancelPage = () => {
         setShowPayingSection(false);
     }
 
@@ -22,7 +22,12 @@ const Dashboard = () => {
             <div className='container mt-2 px-2 mx-auto flex '>
                 <CartFunctionality handlePayNowClick={handlePayNowClick}></CartFunctionality>
 
-                {showPayingSection ? (<Payment handleCancelPage={handleCancelPage} ></Payment>) : (<DataDisplay></DataDisplay>)}
+                {showPayingSection
+                    ?
+                    (<Payment handleCancelPage={handleCancelPage} ></Payment>)
+                    :
+                    (<DataDisplay></DataDisplay>)
+                }
 
             </div>
         </div>

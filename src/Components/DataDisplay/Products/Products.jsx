@@ -28,7 +28,6 @@ const Products = () => {
                     <img src={product.image} alt={product.name} className="object-fill w-full h-40 mb-4" />
                     <p className="text-gray-600 text-center  mb-2">${product.price}</p>
                     <h3 className="text-lg border-t-2 text-gray-500  text-center font-semibold mb-2">{product.name}</h3>
-                    {/* <p className="text-sm text-gray-500">{product.description}</p> */}
                 </div>
             ))}
         </div>

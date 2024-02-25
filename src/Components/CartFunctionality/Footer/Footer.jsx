@@ -20,4 +20,5 @@ const Footer = ({ handlePayNowClick  }) => {
     );
 };
 
+
 export default Footer;
