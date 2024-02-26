@@ -3,7 +3,7 @@ import Navbar from './Navbar/Navbar';
 import CartData from './CartData/CartData';
 import Footer from './Footer/Footer';
 import CustomerSection from './CustomerSection/CustomerSection';
-const CartFunctionality = ({handlePayNowClick}) => {
+const CartFunctionality = ({cartItems, setCartItems,  handlePayNowClick}) => {
 
     
     return (
@@ -12,7 +12,7 @@ const CartFunctionality = ({handlePayNowClick}) => {
 
             <CustomerSection></CustomerSection>
 
-            <CartData></CartData>
+            <CartData cartItems={cartItems} setCartItems={setCartItems}></CartData>
 
             <Footer handlePayNowClick={handlePayNowClick}>   </Footer>
         </div>
